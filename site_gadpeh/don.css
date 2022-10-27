@@ -1,0 +1,860 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.container{
+    background-color: #fff;
+    display: block;
+    margin: 200px auto;
+    border-radius: 10px;
+    width: 50%;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.formular{
+    display: block;
+}
+.content{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.container .title{
+    margin-bottom: 30px;
+}
+
+.container .title h5{
+    margin: 0 auto;
+    background-color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(37, 37, 37);
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+.container .title p{
+    background-color: #fff;
+    margin: 0 auto;
+    margin-left: 50px;
+    font-family:sans-serif;
+    font-size: 0.8em;
+    color: #acacac;
+    font-style: italic;
+}
+
+.line{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 90%;
+    height: 1px;
+    background-color: #acacac;
+}
+.container .formular{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container .formular label{
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    color: #787878;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.container .formular input {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.container .formular img{
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(115, 115, 255, 0.411);
+    border-radius: 5px;
+}
+
+.container .formular input:focus{
+    outline: none;
+}
+
+.container .formular input::placeholder {
+    font-style: italic;
+    color: #989898;
+    font-size: 0.9em;
+}
+
+.container .formular input:focus::placeholder{
+    color: transparent;
+    transition: all 0.3s ease;
+}
+
+.container .formular button{
+    background-color: orange;
+    padding: 10px 25px;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.container .formular button:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        background-color: #fff;
+        display: block;
+        margin: 100px auto;
+        border-radius: 0px;
+        width: 90%;
+        justify-content: center;
+        padding: 20px 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    
+    .formular{
+        display: block;
+    }
+    .content{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    
+    .container .title{
+        margin-bottom: 30px;
+    }
+    
+    .container .title h5{
+        margin: 0 auto;
+        background-color: #fff;
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        color: rgb(37, 37, 37);
+        /* margin-left: 50px; */
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .container .title p{
+        background-color: #fff;
+        margin: 0 auto;
+        font-family:sans-serif;
+        font-size: 1em;
+        color: #acacac;
+        font-style: italic;
+        text-align: center;
+        padding: 0 70px;
+    }
+    
+    .line{
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 90%;
+        height: 1px;
+        background-color: #acacac;
+    }
+    .container .formular{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .container .formular label{
+        font-family: 'Poppins',sans-serif;
+        text-transform: uppercase;
+        color: #787878;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    
+    .container .formular input {
+        display: flex;
+        width: 100%;
+        margin-bottom: 22px;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    .container .formular img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(115, 115, 255, 0.411);
+        border-radius: 5px;
+    }
+    
+    .container .formular input:focus{
+        outline: none;
+    }
+    
+    .container .formular input::placeholder {
+        font-style: italic;
+        color: #989898;
+        font-size: 0.9em;
+    }
+    
+    .container .formular input:focus::placeholder{
+        color: transparent;
+        transition: all 0.3s ease;
+    }
+    
+    .container .formular button{
+        background-color: orange;
+        padding: 9px 17px;
+        border: 1px solid rgb(210, 210, 210);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    .container .formular button:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container{
+        background-color: #fff;
+        display: block;
+        margin: 100px auto;
+        border-radius: 0px;
+        width: 90%;
+        justify-content: center;
+        padding: 20px 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    
+    .formular{
+        display: block;
+    }
+    .content{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    
+    .container .title{
+        margin-bottom: 30px;
+    }
+    
+    .container .title h5{
+        margin: 0 auto;
+        background-color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        color: rgb(37, 37, 37);
+        /* margin-left: 50px; */
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .container .title p{
+        background-color: #fff;
+        margin: 0 auto;
+        font-family:sans-serif;
+        font-size: 1em;
+        color: #acacac;
+        font-style: italic;
+        text-align: center;
+        padding: 0 70px;
+    }
+    
+    .line{
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 90%;
+        height: 1px;
+        background-color: #acacac;
+    }
+    .container .formular{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .container .formular label{
+        font-family: 'Poppins',sans-serif;
+        text-transform: uppercase;
+        color: #787878;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    
+    .container .formular input {
+        display: flex;
+        width: 100%;
+        margin-bottom: 22px;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    .container .formular img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(115, 115, 255, 0.411);
+        border-radius: 5px;
+    }
+    
+    .container .formular input:focus{
+        outline: none;
+    }
+    
+    .container .formular input::placeholder {
+        font-style: italic;
+        color: #989898;
+        font-size: 0.9em;
+    }
+    
+    .container .formular input:focus::placeholder{
+        color: transparent;
+        transition: all 0.3s ease;
+    }
+    
+    .container .formular button{
+        background-color: orange;
+        padding: 9px 17px;
+        border: 1px solid rgb(210, 210, 210);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    .container .formular button:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        background-color: #fff;
+        display: block;
+        margin: 100px auto;
+        border-radius: 0px;
+        width: 90%;
+        justify-content: center;
+        padding: 20px 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    
+    .formular{
+        display: block;
+    }
+    .content{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    
+    .container .title{
+        margin-bottom: 30px;
+    }
+    
+    .container .title h5{
+        margin: 0 auto;
+        background-color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        color: rgb(37, 37, 37);
+        /* margin-left: 50px; */
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .container .title p{
+        background-color: #fff;
+        margin: 0 auto;
+        font-family:sans-serif;
+        font-size: 1em;
+        color: #acacac;
+        font-style: italic;
+        text-align: center;
+        padding: 0 70px;
+    }
+    
+    .line{
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 90%;
+        height: 1px;
+        background-color: #acacac;
+    }
+    .container .formular{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .container .formular label{
+        font-family: 'Poppins',sans-serif;
+        text-transform: uppercase;
+        color: #787878;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    
+    .container .formular input {
+        display: flex;
+        width: 100%;
+        margin-bottom: 22px;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    .container .formular img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(115, 115, 255, 0.411);
+        border-radius: 5px;
+    }
+    
+    .container .formular input:focus{
+        outline: none;
+    }
+    
+    .container .formular input::placeholder {
+        font-style: italic;
+        color: #989898;
+        font-size: 0.9em;
+    }
+    
+    .container .formular input:focus::placeholder{
+        color: transparent;
+        transition: all 0.3s ease;
+    }
+    
+    .container .formular button{
+        background-color: orange;
+        padding: 9px 17px;
+        border: 1px solid rgb(210, 210, 210);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    .container .formular button:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        background-color: #fff;
+        display: block;
+        margin: 100px auto;
+        border-radius: 0px;
+        width: 90%;
+        justify-content: center;
+        padding: 20px 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    
+    .formular{
+        display: block;
+    }
+    .content{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    
+    .container .title{
+        margin-bottom: 30px;
+    }
+    
+    .container .title h5{
+        margin: 0 auto;
+        background-color: #fff;
+        font-size: 1.7em;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        color: rgb(37, 37, 37);
+        /* margin-left: 50px; */
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .container .title p{
+        background-color: #fff;
+        margin: 0 auto;
+        font-family:sans-serif;
+        font-size: 0.8em;
+        color: #acacac;
+        font-style: italic;
+        text-align: center;
+        padding: 0 40px;
+    }
+    
+    .line{
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 90%;
+        height: 1px;
+        background-color: #acacac;
+    }
+    .container .formular{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .container .formular label{
+        font-family: 'Poppins',sans-serif;
+        text-transform: uppercase;
+        color: #787878;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    
+    .container .formular input {
+        display: flex;
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    .container .formular img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(115, 115, 255, 0.411);
+        border-radius: 5px;
+    }
+    
+    .container .formular input:focus{
+        outline: none;
+    }
+    
+    .container .formular input::placeholder {
+        font-style: italic;
+        color: #989898;
+        font-size: 0.9em;
+    }
+    
+    .container .formular input:focus::placeholder{
+        color: transparent;
+        transition: all 0.3s ease;
+    }
+    
+    .container .formular button{
+        background-color: orange;
+        padding: 7px 15px;
+        border: 1px solid rgb(210, 210, 210);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    
+    .container .formular button:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container{
+        background-color: #fff;
+        display: block;
+        margin: 100px auto;
+        border-radius: 0px;
+        width: 90%;
+        justify-content: center;
+        padding: 20px 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    
+    .formular{
+        display: block;
+    }
+    .content{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    
+    .container .title{
+        margin-bottom: 30px;
+    }
+    
+    .container .title h5{
+        margin: 0 auto;
+        background-color: #fff;
+        font-size: 1.7em;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        color: rgb(37, 37, 37);
+        /* margin-left: 50px; */
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .container .title p{
+        background-color: #fff;
+        margin: 0 auto;
+        font-family:sans-serif;
+        font-size: 0.8em;
+        color: #acacac;
+        font-style: italic;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .line{
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 90%;
+        height: 1px;
+        background-color: #acacac;
+    }
+    .container .formular{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .container .formular label{
+        font-family: 'Poppins',sans-serif;
+        text-transform: uppercase;
+        color: #787878;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    
+    .container .formular input {
+        display: flex;
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    .container .formular img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(115, 115, 255, 0.411);
+        border-radius: 5px;
+    }
+    
+    .container .formular input:focus{
+        outline: none;
+    }
+    
+    .container .formular input::placeholder {
+        font-style: italic;
+        color: #989898;
+        font-size: 0.9em;
+    }
+    
+    .container .formular input:focus::placeholder{
+        color: transparent;
+        transition: all 0.3s ease;
+    }
+    
+    .container .formular button{
+        background-color: orange;
+        padding: 7px 15px;
+        border: 1px solid rgb(210, 210, 210);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    
+    .container .formular button:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        background-color: #fff;
+        display: block;
+        margin: 100px auto;
+        border-radius: 0px;
+        width: 90%;
+        justify-content: center;
+        padding: 20px 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    
+    .formular{
+        display: block;
+    }
+    .content{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    
+    .container .title{
+        margin-bottom: 30px;
+    }
+    
+    .container .title h5{
+        margin: 0 auto;
+        background-color: #fff;
+        font-size: 1.7em;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        color: rgb(37, 37, 37);
+        /* margin-left: 50px; */
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .container .title p{
+        background-color: #fff;
+        margin: 0 auto;
+        font-family:sans-serif;
+        font-size: 0.8em;
+        color: #acacac;
+        font-style: italic;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .line{
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 90%;
+        height: 1px;
+        background-color: #acacac;
+    }
+    .container .formular{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .container .formular label{
+        font-family: 'Poppins',sans-serif;
+        text-transform: uppercase;
+        color: #787878;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    
+    .container .formular input {
+        display: flex;
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    .container .formular img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(115, 115, 255, 0.411);
+        border-radius: 5px;
+    }
+    
+    .container .formular input:focus{
+        outline: none;
+    }
+    
+    .container .formular input::placeholder {
+        font-style: italic;
+        color: #989898;
+        font-size: 0.9em;
+    }
+    
+    .container .formular input:focus::placeholder{
+        color: transparent;
+        transition: all 0.3s ease;
+    }
+    
+    .container .formular button{
+        background-color: orange;
+        padding: 7px 15px;
+        border: 1px solid rgb(210, 210, 210);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    
+    .container .formular button:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+}

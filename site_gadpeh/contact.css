@@ -1,0 +1,1897 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+
+:root {
+  --logo-color: #002f06;
+  --menu-items: #4d4d4d;
+  --line-color: #c58c18;
+  ---bg-color: #ededed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #f8f8f8;
+}
+
+
+.menubtn {
+  color: var(--menu-items);
+}
+
+.boutons{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.boutons button{
+  margin-right: 30px;
+  background-color: transparent;
+  color: #c58c18;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.boutons button:hover{
+  transform: translateY(2px);
+  background-color: #c58c18;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* ------ Banner ------- */
+
+.banner-container{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+}
+
+.banner-container .title h3{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 150px;
+    font-size: 2.5em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner-container .title p{
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.icon{
+    margin-top: 100px;
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.icon i{
+    margin-right: 10px;
+}
+
+.icon i:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: .3s ease-in-out;
+}
+
+/* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    gap: 50px;
+    margin-bottom: 400px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 20px 18px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 15px;
+    clip-path: circle();
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+
+.info-container .phone span{
+    padding: 7px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 30px 20px;
+}
+
+.message-title h3{
+    font-size: 1.5em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 0.8em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 40px;
+}
+
+.formulaire input{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1b;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    margin-top: 10px;
+    resize: none;
+    padding: 10px;
+    margin-left: 5px;
+    width: 82%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1b;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 6px 12px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+    box-shadow: rgba(104, 253, 58, 0.835) 2px 5px 12px;
+
+}
+
+/* ------ footer-------- */
+
+footer{
+    display: block;
+    margin: 0 auto;
+}
+
+footer .line{
+    width: 100%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+footer .info{
+    margin: 10px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .info i{
+    font-size: 0.8em;
+    color: #9a9a9a;
+}
+
+footer .info h5{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------
+------------------------                Responsive              --------------------------------
+------------------------------------------------------------------------------------------------ */
+
+@media screen and(max-width: 1440px) {
+          /* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 15px;
+    clip-path: circle();
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+.info-container .phone span{
+    padding: 7px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+    font-size: 1.3em;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 5px 16px;
+}
+
+.message-title h3{
+    font-size: 1.2em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 0.8em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 30px;
+}
+
+.formulaire input{
+    margin: 5px 20px 20px 0;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+    width: 40%;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    resize: none;
+    padding: 9px;
+    margin-left: 1px;
+    width: 84%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 8px 14px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 1px;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    margin-bottom: 15px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+}
+
+/* ------ footer-------- */
+
+footer{
+    display: block;
+    margin: 0 auto;
+}
+
+footer .line{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+footer .info{
+    margin: 10px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .info i{
+    font-size: 0.6em;
+    color: #9a9a9a;
+}
+
+footer .info h5{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-style: italic;
+}
+}
+
+@media screen and (max-width: 1300px) {
+      /* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 15px;
+    clip-path: circle();
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+.info-container .phone span{
+    padding: 7px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+    font-size: 1.3em;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 5px 16px;
+}
+
+.message-title h3{
+    font-size: 1.4em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 30px;
+}
+
+.formulaire input{
+    margin: 5px 20px 20px 0;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+    width: 40%;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    resize: none;
+    padding: 9px;
+    margin-left: 1px;
+    width: 84%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 8px 14px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 1px;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    margin-bottom: 15px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+}
+
+/* ------ footer-------- */
+
+footer{
+    display: block;
+    margin: 0 auto;
+}
+
+footer .line{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+footer .info{
+    margin: 10px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .info i{
+    font-size: 0.6em;
+    color: #9a9a9a;
+}
+
+footer .info h5{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-style: italic;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  /* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 15px;
+    clip-path: circle();
+    margin-right: 20px;
+    font-size: 1.3em;
+}
+
+.info-container .phone span{
+    padding: 7px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+    font-size: 1em;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 5px 16px;
+}
+
+.message-title h3{
+    font-size: 1.2em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 0.8em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 30px;
+}
+
+.formulaire input{
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+    width: 100%;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    resize: none;
+    padding: 9px;
+    margin-left: 1px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 8px 14px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 1px;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    margin-bottom: 15px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+}
+
+/* ------ footer-------- */
+
+footer{
+    display: block;
+    margin: 0 auto;
+}
+
+footer .line{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+footer .info{
+    margin: 10px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .info i{
+    font-size: 0.6em;
+    color: #9a9a9a;
+}
+
+footer .info h5{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-style: italic;
+}
+}
+
+@media screen and (max-width: 850px) {
+/* ------ Banner ------- */
+
+.banner-container{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    padding-top: 40px;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+}
+
+.banner-container .title h3{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 1.9em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner-container .title p{
+    text-align: center;
+    line-height: 12px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.8em;
+    padding: 9px 25px;
+    color: #fff;
+}
+
+.icon{
+    margin-top: 25px;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.icon i{
+    margin-right: 15px;
+}
+
+.icon i:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: .3s ease-in-out;
+}
+
+/* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 12px 18px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 15px;
+    clip-path: circle();
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+.info-container .phone span{
+    padding: 7px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+    font-size: 1.2em;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 5px 16px;
+}
+
+.message-title h3{
+    font-size: 1.6em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 30px;
+}
+
+.formulaire input{
+    margin: 5px 0 17px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+    width: 100%;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    resize: none;
+    padding: 9px;
+    margin-left: 1px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 10px 22px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 1px;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+}
+
+/* ------ footer-------- */
+
+footer{
+    display: block;
+    margin: 0 auto;
+}
+
+footer .line{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+footer .info{
+    margin: 10px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .info i{
+    font-size: 0.6em;
+    color: #9a9a9a;
+}
+
+footer .info h5{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-style: italic;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+
+/* ------ Banner ------- */
+
+.banner-container{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    padding-top: 40px;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+}
+
+.banner-container .title h3{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 1.7em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner-container .title p{
+    text-align: center;
+    line-height: 12px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.8em;
+    padding: 9px 25px;
+    color: #fff;
+}
+
+.icon{
+    margin-top: 25px;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.icon i{
+    margin-right: 15px;
+}
+
+.icon i:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: .3s ease-in-out;
+}
+
+/* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 12px 18px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 15px;
+    clip-path: circle();
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+.info-container .phone span{
+    padding: 7px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+    font-size: 1.2em;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 5px 16px;
+}
+
+.message-title h3{
+    font-size: 1.5em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 30px;
+}
+
+.formulaire input{
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+    width: 100%;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    resize: none;
+    padding: 8px;
+    margin-left: 1px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 9px 16px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 1px;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+}
+
+/* ------ footer-------- */
+
+footer{
+    display: block;
+    margin: 0 auto;
+}
+
+footer .line{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+footer .info{
+    margin: 10px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .info i{
+    font-size: 0.5em;
+    color: #9a9a9a;
+}
+
+footer .info h5{
+    font-family: sans-serif;
+    font-size: 0.6em;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-style: italic;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+/* ------ Banner ------- */
+
+.banner-container{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 280px;
+    padding-top: 40px;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+}
+
+.banner-container .title h3{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 1.4em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner-container .title p{
+    text-align: center;
+    line-height: 12px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.7em;
+    padding: 7px 25px;
+    color: #fff;
+}
+
+.icon{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.icon i{
+    margin-right: 15px;
+}
+
+.icon i:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: .3s ease-in-out;
+}
+
+/* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 12px 18px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 15px;
+    clip-path: circle();
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.info-container .phone span{
+    padding: 7px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+    font-size: 1em;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 5px 16px;
+}
+
+.message-title h3{
+    font-size: 1.3em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 30px;
+}
+
+.formulaire input{
+    margin: 3px 0 10px 0;
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+    width: 100%;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    resize: none;
+    padding: 8px;
+    margin-left: 1px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 8px 14px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 1px;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    margin-bottom: 15px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+}
+
+/* ------ footer-------- */
+
+footer{
+    display: block;
+    margin: 0 auto;
+}
+
+footer .line{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+footer .info{
+    margin: 10px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .info i{
+    font-size: 0.5em;
+    color: #9a9a9a;
+}
+
+footer .info h5{
+    font-family: sans-serif;
+    font-size: 0.6em;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-style: italic;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+   /* ------ Banner ------- */
+
+.banner-container{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 280px;
+    padding-top: 40px;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+}
+
+.banner-container .title h3{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 1.4em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner-container .title p{
+    text-align: center;
+    line-height: 12px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.7em;
+    padding: 7px 25px;
+    color: #fff;
+}
+
+.icon{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+}
+
+.icon i{
+    margin-right: 10px;
+}
+
+.icon i:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: .3s ease-in-out;
+}
+
+/* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 8px 10px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 10px;
+    clip-path: circle();
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.info-container .phone span{
+    padding: 7px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+    font-size: 0.9em;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 5px 16px;
+}
+
+.message-title h3{
+    font-size: 1.3em;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 0.8em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 30px;
+}
+
+.formulaire input{
+    margin: 3px 0 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+    width: 100%;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    resize: none;
+    padding: 8px;
+    margin-left: 1px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 8px 14px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 1px;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    margin-bottom: 15px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+}
+
+/* ------ footer-------- */
+
+footer{
+    display: block;
+    margin: 0 auto;
+}
+
+footer .line{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+footer .info{
+    margin: 10px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .info i{
+    font-size: 0.5em;
+    color: #9a9a9a;
+}
+
+footer .info h5{
+    font-family: sans-serif;
+    font-size: 0.6em;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+  /* ------ Banner ------- */
+
+.banner-container{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 270px;
+    padding-top: 50px;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+}
+
+.banner-container .title h3{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner-container .title p{
+    text-align: center;
+    line-height: 12px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.7em;
+    padding: 7px 25px;
+    color: #fff;
+}
+
+.icon{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+}
+
+.icon i{
+    margin-right: 10px;
+}
+
+.icon i:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: .3s ease-in-out;
+}
+
+
+/* ------------------------        Information     ------------------------ */
+
+.info-container{
+    padding-top: 70px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.info-container .contact{
+    display: block;
+}
+
+.info-container .phone{
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 8px 10px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.info-container .phone i{
+    color: #002f06;
+    background-color: #002f062e;
+    padding: 12px;
+    clip-path: circle();
+    margin-right: 7px;
+    font-size: 0.8em;
+}
+
+.info-container .phone span{
+    padding: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #3a3939;
+    font-size: 0.7em;
+}
+
+.message{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;    
+    padding: 5px 16px;
+}
+
+.message-title h3{
+    font-size: 1.1em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.message-title p{
+    margin-top: 10px;
+    font-size: 0.6em;
+    font-family: 'Poppins',sans-serif;
+    color: #3a3939;
+}
+
+.formulaire{
+    margin-top: 30px;
+}
+
+.formulaire input{
+    margin: 3px 0 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire input:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire input{
+    outline: none;
+}
+
+.formulaire input::placeholder{
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.formulaire input:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+
+}
+
+.formulaire textarea{
+    resize: none;
+    padding: 8px;
+    margin-left: 1px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #afafaf;
+}
+
+.formulaire textarea{
+    outline: none;
+}
+
+.formulaire textarea:focus{
+    border: 1px solid #1b1b1bae;
+}
+
+.formulaire textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.formulaire textarea:focus::placeholder{
+    color: transparent;
+    transition: 0.1s ease-in;
+}
+
+.formulaire .bouton button{
+    background-color: #002f06;
+    padding: 5px 10px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    margin-left: 1px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.6em;
+    margin-bottom: 15px;
+}
+
+.formulaire .bouton button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transition:  0.3s ease-in-out;
+}
+
+
+}

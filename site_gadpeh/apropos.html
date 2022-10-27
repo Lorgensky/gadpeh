@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Propos</title>
+    <link rel="stylesheet" href="apropos.css">
+
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>  
+        $(function(){ 
+          $("#header").load("header.html");  
+          $("#footer").load("footer.html");  
+        }); 
+        </script> 
+
+    <script src="https://kit.fontawesome.com/79fea2c827.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    
+<!-- -------------------------------------------------------------------
+------------------------        Header
+------------------------------------------------------------------------>
+
+
+<div class="banner">
+    
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="videos/vid.mp4" type="video/mp4">
+    </video>
+    <div id="header"></div>
+
+    <div class="content">
+        <h1 data-aos="fade-in" data-aos-duration="1000"> Plus Qu'une Organisation </h1>
+        <h2 data-aos="fade-in" data-aos-duration="1000">Une source de vie</h2>
+        
+        <div class="wrapper">
+            <ul class="dynamic-text">
+                <li data-aos="flip-up" data-aos-duration="4000"><span >Apprendre a nous connaitre</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- -------------------------------------------------------------------
+------------------------       A propos
+------------------------------------------------------------------------>
+<div class="container-apropos">
+    <div class="apropos-content">
+        <div class="paragraph">
+        <h3>Notre Misson</h3>
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Est qui excepturi quasi facere, soluta culpa tempore 
+            repellendus in error nulla distinctio possimus? Praesentium 
+            adipisci aspernatur facere incidunt maiores consequatur tempore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nam quibusdam sed natus totam dolores explicabo nisi sapiente
+            dicta velit alias, odit nostrum distinctio incidunt! 
+            Illum ut nobis voluptas numquam sapiente?<br>
+            
+        
+        </p>
+        </div>
+
+        <div class="image">
+            <img src="images/equipe.jpg" alt="team" id="mission">
+        </div>
+    </div>
+</div>
+
+<div class="container-apropos">
+    <div class="apropos-content">
+        <div class="image">
+            <img src="images/equipe.jpg" alt="team" >
+        </div>
+
+        <div class="paragraph">
+        <h3>Notre Histoire</h3>
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Est qui excepturi quasi facere, soluta culpa tempore 
+            repellendus in error nulla distinctio possimus? Praesentium 
+            adipisci aspernatur facere incidunt maiores consequatur tempore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nam quibusdam sed natus totam dolores explicabo nisi sapiente
+             dicta velit alias, odit nostrum distinctio incidunt! 
+             Illum ut nobis voluptas numquam sapiente?<br>
+            
+        
+        </p>
+        </div>
+
+        
+    </div>
+</div>
+
+
+<!-- -------------------------------------------------------------------
+------------------------       Equipe
+------------------------------------------------------------------------>
+
+
+<div class="container-team">
+    <div class="team-title">
+        <h3>Notre Equipe</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ipsum?<br>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+    <div class="team-content">
+        <div class="card">
+            <div class="image">
+                <img src="images/membre1.jpg" alt="membre1">
+            </div>
+             <div class="name"><h4>Michel Legrand</h4></div>
+             <div class="post">Directeur Executif</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/membre2.jpg" alt="membre2">
+            </div>
+             <div class="name"><h4>Luiz Fabiano</h4></div>
+             <div class="post">Chef de Projet</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/membre3.jpg" alt="membre3">
+            </div>
+             <div class="name"><h4>Fabienne Briz</h4></div>
+             <div class="post">Responsable Marketing</div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="images/membre4.jpg" alt="membre4">
+            </div>
+             <div class="name"><h4>David Joachim</h4></div>
+             <div class="post">Porte Parole</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/membre5.jpg" alt="membre5">
+           </div>
+             <div class="name"><h4>Luc Tabhita</h4></div>
+             <div class="post">Secretaire</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/membre6.jpg" alt="membre6">
+            </div>
+             <div class="name"><h4>Fabienne Briz</h4></div>
+             <div class="post">Redacteur de Projet</div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+         AOS.init({
+            once: true
+         });
+    </script>
+
+<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,2424 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --logo-color: #002f06;
+  --menu-items: #4d4d4d;
+  --line-color: #c58c18;
+  ---bg-color: #ededed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.boutons{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.boutons button{
+  margin-right: 30px;
+  background-color: transparent;
+  color: #c58c18;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.boutons button:hover{
+  transform: translateY(2px);
+  background-color: #c58c18;
+  color: #fff;
+  cursor: pointer;
+}
+
+.image-principale {
+  width: 100%;
+  height: 650px;
+  background-image: linear-gradient(
+      to right,
+      rgba(200, 8, 20, 0.3),
+      rgba(28, 70, 184, 0.2)
+    ),
+    url(images/img-principale.jpg);
+  background-size: cover;
+  padding-top: 60px;
+}
+
+.image-principale p {
+  font-size: 4em;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-align: center;
+  line-height: 70px;
+  padding: 10% 10% 2% 10%;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.ligne-1{
+    display: block;
+    margin: 0 auto;
+    width: 18%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+
+}
+
+/* ------------------------
+--- Nos programmes
+------------------------ */
+.titre-1{
+  padding: 100px 0 1px 0;
+  font-family: 'Poppins',sans-serif;
+  color: var(--logo-color);
+  font-size: 1.7em;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.container .programmes p{
+  text-align: center;
+}
+
+.line-2{
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--line-color);
+  margin-bottom: 50px;
+}
+
+
+/* --- card */
+.container{
+  background-color: #fff;
+}
+.card-grid{
+  padding: 100px 0 300px;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  display: grid;
+  gap: 35px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-icon img {
+  padding: 35px 0 8px 0;
+  width: 50%;
+}
+
+.card{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.card-title h3{
+  color: var(--logo-color);
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  padding-bottom: 8%;
+}
+
+#protection{
+  font-size: 1em;
+}
+.card-paragraph p{
+  color: var(--logo-color);
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+
+.button-more button{
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 10% 0;
+  background-color: var(--logo-color);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-more button:hover{
+  cursor: pointer;
+}
+
+/* -------------------
+--- donation
+------------------- */
+
+.container-donation{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 5%;
+  background-image: url(images/investment.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.paragraph-donation{
+  float: right;
+  width: 50%;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: serif;
+  text-align: right;
+  color: #fff;
+  margin-top: 40px;
+  padding: 50px;
+}
+
+.btn-don button{
+  float: right;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color:  var(--logo-color);
+  color: #fff;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+
+.btn-don button:hover{
+  cursor: pointer;
+}
+
+
+/* -----------------------
+--- A propos
+----------------------- */
+
+.a-propos{
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.container-about{
+  display: flex;
+}
+
+.image-about img{
+  display: flex;
+  width: 500px;
+  margin-right: 70px;
+}
+
+.apropos{
+  width: 100%;
+  color: #1b1b1b;
+  font-size: 1.2em;
+  font-family: serif;
+}
+
+.btn-apropos{
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: var(--line-color);
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.btn-apropos:hover{
+  cursor: pointer;
+}
+
+
+
+
+/* ------ news letter */
+
+.container-news{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 200px;
+  background-image: url(images/background-newsletter.jpg);
+  background-size: cover;
+}
+.newsletter{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 8px 4px, rgba(0, 0, 0, 0.15) 0px 3px 2px -3px; */
+  background-color: #ededed85;
+}
+.news-side1{
+  margin-right: 100px;
+  padding: 5% 0;
+}
+.news-side1 h2{
+  color: var(--logo-color);
+  font-size: 2.4em;
+  font-family: 'Poppins',sans-serif;
+  margin-bottom: 30px;
+}
+
+.news-side1 p{
+  color: #1b1b1b;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+.news-side1 button{
+  background-color:  var(--logo-color);
+  width: 120px;
+  height: 30px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+.news-side1 button:hover{
+  cursor: pointer;
+}
+
+.news-side2 img{
+  width: 400px;
+  padding: 10% 0;
+}
+
+.input-mail{
+  padding-left: 20px;
+  font-style: italic;
+  margin: 5% 0;
+  width: 280px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.input-mail:focus{
+  outline: none;
+}
+
+
+/* ---------------------------------------------------------------------------------------------
+------------------------                Responsive              --------------------------------
+------------------------------------------------------------------------------------------------ */
+
+@media screen and(max-width: 1440px) {
+  .image-principale p {
+    font-size: 3em;
+    font-family: 'BEQUIND', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 45px;
+    padding: 15% 10% 4% 10%;
+  }
+
+  .image-principale {
+    width: 100%;
+    height: 430px;
+    background-image: linear-gradient(
+        to right,
+        rgba(200, 8, 20, 0.3),
+        rgba(28, 70, 184, 0.2)
+      ),
+      url(images/img-principale.jpg);
+    background-size: cover;
+  }
+
+   /* ------    Donation    -------- */
+
+   
+   .container-donation{
+    width: 100%;
+    height: 325px;
+    margin-bottom: 5%;
+    background-image: url(images/investment.jpg);
+    background-attachment: fixed;
+  }
+
+  .paragraph-donation{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 10% 0;
+    font-size: 1.2em;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .btn-don button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--line-color);
+    color: #fff;
+    font-family:sans-serif;
+    font-size: 0.8em;
+  }
+
+  .btn-don button:hover{
+    cursor: pointer;
+  }
+
+  .a-propos{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .container-about{
+    display: flex;
+  }
+  
+  .image-about img{
+    display: flex;
+    width: 500px;
+    margin-right: 70px;
+  }
+  
+  .apropos{
+    width: 100%;
+    color: #1b1b1b;
+    font-size: 1.1em;
+    font-family: sans-serif;
+  }
+  
+  .btn-apropos{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: var(--line-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+  }
+  
+  .btn-apropos:hover{
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .image-principale p {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+    padding: 110px 10px 4px 10px;
+  }
+
+  .image-principale {
+    width: 100%;
+    height: 520px;
+    background-image: linear-gradient(
+        to right,
+        rgba(200, 8, 20, 0.3),
+        rgba(28, 70, 184, 0.2)
+      ),
+      url(images/img-principale.jpg);
+    background-size: cover;
+  }
+
+
+  .ligne-1{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-top: 20px;
+  }
+
+  .boutons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  
+  .boutons button{
+    margin-right: 25px;
+    background-color: transparent;
+    color: #c58c18;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: 0.4s ease-in-out;
+    font-size: 0.8em;
+  }
+  
+  .boutons button:hover{
+    transform: translateY(2px);
+    background-color: #c58c18;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .titre-1{
+    padding: 40px 0 1px 0;
+    font-family: 'Poppins',sans-serif;
+    color: var(--logo-color);
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container .programmes p{
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+  }
+
+
+  .card-grid{
+    padding: 10px 0 100px 0;
+    width: 68%;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-title h3{
+    color: var(--logo-color);
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-bottom: 8%;
+  }
+
+  .card-paragraph p{
+    font-size: 0.8em;
+  }
+
+
+  .titre-1{
+    font-size: 1.5em;
+  }
+
+  .line-2{
+    margin-top: 10px;
+    width: 20%;
+  }
+
+  .card-icon img {
+    padding: 15% 0 8% 0;
+    width: 30%;
+  }
+
+  .button-more button{
+    width: 20%;
+    height: 18px;
+    font-size: 0.5em;
+    border-radius: 15px;
+    margin: 10% 0 5% 0;
+    background-color: var(--logo-color);
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+   /* ------    Donation    -------- */
+
+   
+   .container-donation{
+    width: 100%;
+    height: 405px;
+    margin-bottom: 5%;
+    background-image: url(images/investment.jpg);
+    background-attachment: fixed;
+  }
+
+  .paragraph-donation{
+    float: left;
+    margin: 0 auto;
+    padding: 70px 40px;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: left;
+  }
+
+  .btn-don button{
+    float: left;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--logo-color);
+    color: #fff;
+    font-family:sans-serif;
+    font-size: 0.8em;
+    padding: 5px;
+  }
+
+  .btn-don button:hover{
+    cursor: pointer;
+  }
+
+   /* ---- a propos  */
+
+   .a-propos{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .container-about{
+    display: flex;
+  }
+  
+  .image-about img{
+    display: flex;
+    width: 320px;
+    margin-right: 70px;
+  }
+  
+  .apropos{
+    width: 100%;
+    color: #1b1b1b;
+    font-size: 1.1em;
+    font-family: serif;
+  }
+  
+  .btn-apropos{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: var(--line-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+  }
+
+  .container-news{
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: justify;
+    background-image: url(images/background-newsletter.jpg);
+    background-size: cover;
+  }
+  .newsletter{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #ededed85;
+    text-align: justify;
+    padding-left: 20px;
+  }
+
+  .news-side1{
+    padding: 5% 0;
+  }
+
+  .news-side1 h2{
+    color: var(--logo-color);
+    font-size: 1.5em;
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  .news-side1 p{
+    color: #282828;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-style: italic;
+  }
+  
+  .news-side1 button{
+    background-color: var(--logo-color);
+    width: 70px;
+    height: 25px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 0.6em;
+  }
+  
+  .news-side1 button:hover{
+    cursor: pointer;
+  }
+  
+  .news-side2 img{
+    width: 230px;
+    padding: 20% 0;
+    padding-right: 20px;
+  }
+  
+  .input-mail{
+    padding-left: 20px;
+    font-style: italic;
+    margin: 5% 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+  }
+  
+  .input-mail:focus{
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .image-principale p {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+    padding: 110px 10px 4px 10px;
+  }
+
+  .image-principale {
+    width: 100%;
+    height: 520px;
+    background-image: linear-gradient(
+        to right,
+        rgba(200, 8, 20, 0.3),
+        rgba(28, 70, 184, 0.2)
+      ),
+      url(images/img-principale.jpg);
+    background-size: cover;
+  }
+
+
+  .ligne-1{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-top: 20px;
+  }
+
+  .boutons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  
+  .boutons button{
+    margin-right: 25px;
+    background-color: transparent;
+    color: #c58c18;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: 0.4s ease-in-out;
+    font-size: 0.8em;
+  }
+  
+  .boutons button:hover{
+    transform: translateY(2px);
+    background-color: #c58c18;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .titre-1{
+    padding: 40px 0 1px 0;
+    font-family: 'Poppins',sans-serif;
+    color: var(--logo-color);
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container .programmes p{
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+  }
+
+
+  .card-grid{
+    padding: 10px 0 100px 0;
+    width: 68%;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-title h3{
+    color: var(--logo-color);
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-bottom: 8%;
+  }
+
+  .card-paragraph p{
+    font-size: 0.8em;
+  }
+
+  .titre-1{
+    font-size: 1.5em;
+  }
+
+  .line-2{
+    margin-top: 10px;
+    width: 20%;
+  }
+
+  .card-icon img {
+    padding: 15% 0 8% 0;
+    width: 30%;
+  }
+
+  .button-more button{
+    width: 20%;
+    height: 18px;
+    font-size: 0.5em;
+    border-radius: 15px;
+    margin: 10% 0 5% 0;
+    background-color: var(--logo-color);
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+      /* ------    Donation    -------- */
+
+   
+      .container-donation{
+        width: 100%;
+        height: 405px;
+        margin-bottom: 5%;
+        background-image: url(images/investment.jpg);
+        background-attachment: fixed;
+      }
+    
+      .paragraph-donation{
+        float: right;
+        margin: 0 auto;
+        padding: 90px 50px;
+        font-size: 1.2em;
+        font-style: italic;
+        font-family: sans-serif;
+        text-align: right;
+        width: 450px;
+      }
+    
+      .btn-don button{
+        float: right;
+        margin-top: 30px;
+        width: 130px;
+        height: 35px;
+        border: none;
+        border-radius: 15px;
+        background-color: var(--logo-color);
+        color: #fff;
+        font-family:sans-serif;
+        font-size: 0.8em;
+        padding: 5px;
+      }
+    
+      .btn-don button:hover{
+        cursor: pointer;
+      }
+
+      /* ---- a propos  */
+
+      .a-propos{
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+        justify-content: center;
+        margin-bottom: 80px;
+      }
+      .container-about{
+        display: flex;
+      }
+      
+      .image-about img{
+        display: flex;
+        width: 320px;
+        margin-right: 70px;
+      }
+      
+      .apropos{
+        width: 100%;
+        color: #1b1b1b;
+        font-size: 1.1em;
+        font-family: serif;
+      }
+      
+      .btn-apropos{
+        margin-top: 20px;
+        width: 150px;
+        height: 30px;
+        background-color: var(--line-color);
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+      
+      }
+
+      /* ---- newsletter  */
+
+   .container-news{
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: justify;
+    background-image: url(images/background-newsletter.jpg);
+    background-size: cover;
+  }
+  .newsletter{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #ededed85;
+    text-align: justify;
+    padding-left: 20px;
+  }
+
+  .news-side1{
+    padding: 5% 0;
+  }
+
+  .news-side1 h2{
+    color: var(--logo-color);
+    font-size: 1.5em;
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  .news-side1 p{
+    color: #282828;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-style: italic;
+  }
+  
+  .news-side1 button{
+    background-color: var(--logo-color);
+    width: 70px;
+    height: 25px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 0.6em;
+  }
+  
+  .news-side1 button:hover{
+    cursor: pointer;
+  }
+  
+  .news-side2 img{
+    width: 230px;
+    padding: 20% 0;
+    padding-right: 20px;
+  }
+  
+  .input-mail{
+    padding-left: 20px;
+    font-style: italic;
+    margin: 5% 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+  }
+  
+  .input-mail:focus{
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .image-principale p {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+    padding: 80px 10px 4px 10px;
+  }
+
+  .image-principale {
+    width: 100%;
+    height: 480px;
+    background-image: linear-gradient(
+        to right,
+        rgba(200, 8, 20, 0.3),
+        rgba(28, 70, 184, 0.2)
+      ),
+      url(images/img-principale.jpg);
+    background-size: cover;
+  }
+
+
+  .ligne-1{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-top: 20px;
+  }
+
+  .boutons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  
+  .boutons button{
+    margin-right: 25px;
+    background-color: transparent;
+    color: #c58c18;
+    padding: 12px 22px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: 0.4s ease-in-out;
+    font-size: 0.7em;
+  }
+  
+  .boutons button:hover{
+    transform: translateY(2px);
+    background-color: #c58c18;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .titre-1{
+    padding: 40px 0 1px 0;
+    font-family: 'Poppins',sans-serif;
+    color: var(--logo-color);
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container .programmes p{
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+  }
+
+
+  .card-grid{
+    padding: 4px 0 120px 0;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-title h3{
+    color: var(--logo-color);
+    font-size: 1.3em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-bottom: 8%;
+  }
+
+  .card-paragraph p{
+    font-size: 0.8em;
+  }
+
+  .titre-1{
+    font-size: 1.5em;
+  }
+
+  .line-2{
+    margin-top: 10px;
+    width: 20%;
+  }
+
+  .card-icon img {
+    padding: 15% 0 8% 0;
+    width: 30%;
+  }
+
+  .button-more button{
+    width: 18%;
+    height: 20px;
+    font-size: 0.6em;
+    border-radius: 15px;
+    margin: 10% 0 5% 0;
+    background-color: var(--logo-color);
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+    /* ------    Donation    -------- */
+
+   
+    .container-donation{
+      width: 100%;
+      height: 425px;
+      margin-bottom: 5%;
+      background-image: url(images/investment.jpg);
+      background-attachment: fixed;
+    }
+  
+    .paragraph-donation{
+      float: left;
+      margin: 0 auto;
+      padding: 90px 50px;
+      font-size: 1.1em;
+      font-style: italic;
+      font-family: sans-serif;
+      text-align: left;
+      width: 400px;
+    }
+  
+    .btn-don button{
+      float: left;
+      margin-top: 30px;
+      width: 180px;
+      height: 48px;
+      border: none;
+      border-radius: 18px;
+      background-color: var(--logo-color);
+      color: #fff;
+      font-family:sans-serif;
+      font-size: 0.8em;
+      padding: 12px;
+    }
+  
+    .btn-don button:hover{
+      cursor: pointer;
+    }
+
+    /* ----  a propos  */
+
+    .a-propos{
+      display: flex;
+      margin: 0 auto;
+      width: 90%;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+    .container-about{
+      display: flex;
+    }
+    
+    .image-about img{
+      display: flex;
+      width: 250px;
+      margin-right: 70px;
+    }
+    
+    .apropos{
+      width: 100%;
+      color: #1b1b1b;
+      font-size: 0.9em;
+      font-family: serif;
+    }
+    
+    .btn-apropos{
+      margin-top: 20px;
+      width: 150px;
+      height: 30px;
+      background-color: var(--line-color);
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+    
+    }
+
+    
+   /* ---- newsletter  */
+
+   .container-news{
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: justify;
+    background-image: url(images/background-newsletter.jpg);
+    background-size: cover;
+  }
+  .newsletter{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #ededed85;
+    text-align: justify;
+    padding-left: 20px;
+  }
+
+  .news-side1{
+    padding: 5% 0;
+  }
+
+  .news-side1 h2{
+    color: var(--logo-color);
+    font-size: 1.5em;
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  .news-side1 p{
+    color: #282828;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-style: italic;
+  }
+  
+  .news-side1 button{
+    background-color: var(--logo-color);
+    width: 70px;
+    height: 25px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 0.6em;
+  }
+  
+  .news-side1 button:hover{
+    cursor: pointer;
+  }
+  
+  .news-side2 img{
+    width: 200px;
+    padding: 10% 0;
+    padding-right: 20px;
+  }
+  
+  .input-mail{
+    padding-left: 20px;
+    font-style: italic;
+    margin: 5% 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+  }
+  
+  .input-mail:focus{
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .image-principale p {
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 45px;
+    padding: 80px 10px 4px 10px;
+  }
+
+  .image-principale {
+    width: 100%;
+    height: 470px;
+    background-image: linear-gradient(
+        to right,
+        rgba(200, 8, 20, 0.3),
+        rgba(28, 70, 184, 0.2)
+      ),
+      url(images/img-principale.jpg);
+    background-size: cover;
+  }
+
+
+  .ligne-1{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-top: 20px;
+  }
+
+  .boutons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  
+  .boutons button{
+    margin-right: 25px;
+    background-color: transparent;
+    color: #c58c18;
+    padding: 12px 22px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: 0.4s ease-in-out;
+    font-size: 0.7em;
+  }
+  
+  .boutons button:hover{
+    transform: translateY(2px);
+    background-color: #c58c18;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  
+  .titre-1{
+    padding: 40px 0 1px 0;
+    font-family: 'Poppins',sans-serif;
+    color: var(--logo-color);
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container .programmes p{
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+  }
+
+  .card-grid{
+    padding: 10px 0 100px 0;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-title h3{
+    color: var(--logo-color);
+    font-size: 1.4em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding: 18px;
+    line-height: 18px;
+  }
+
+  .titre-1{
+    font-size: 1.5em;
+  }
+
+  .line-2{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-bottom: 30px;
+  }
+
+
+  .card-paragraph p{
+    font-size: 1em;
+  }
+
+  .card-icon img {
+    padding: 30px 0 8px 0;
+    width: 50%;
+  }
+
+  .button-more button{
+    width: 30%;
+    height: 35px;
+    font-size: 1em;
+    border-radius: 25px;
+    margin: 40px 0 45px 0;
+    background-color: var(--logo-color);
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .button-more button:hover{
+    cursor: pointer;
+  }
+
+  /* ------    Donation    -------- */
+
+   
+  .container-donation{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 5%;
+    background-image: url(images/investment.jpg);
+    background-attachment: fixed;
+  }
+
+  .paragraph-donation{
+    float: left;
+    margin: 0 auto;
+    padding: 35px;
+    font-size: 0.9em;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: left;
+    width: 60%;
+  }
+
+  .btn-don button{  
+    float: left;
+    margin-top: 20px;
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--logo-color);
+    color: #fff;
+    font-family:sans-serif;
+    font-size: 0.8em;
+    padding: 10px;
+  }
+
+  .btn-don button:hover{
+    cursor: pointer;
+  }
+
+  /* -----   a propos  */
+
+  .a-propos{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .container-about{
+    display: block;
+  }
+  
+  .image-about img{
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+  }
+  
+  .apropos{
+    width: 100%;
+    color: #1b1b1b;
+    font-size: 1em;
+    font-family: serif;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .btn-apropos{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: var(--line-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+  }
+
+   /* ---- newsletter  */
+
+   .container-news{
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url(images/background-newsletter.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .newsletter{
+    display: block;
+    margin: 0 auto;
+    background-color: #ededed85;
+    padding-left: 0;
+  }
+
+  .news-side1{
+    margin-right: 0;
+  }
+
+  .news-side1 h2{
+    color: var(--logo-color);
+    font-size: 1.4em;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .news-side1 p{
+    color: #282828;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .news-side1 button{
+    background-color: var(--logo-color);
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 0.6em;
+  }
+  
+  .news-side1 button:hover{
+    cursor: pointer;
+  }
+  
+  .news-side2 img{
+    display: none;
+  }
+
+  .input{
+    text-align: center;
+  }
+  
+  .input-mail{
+    font-style: italic;
+    margin: 15px 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+  }
+  
+  .input-mail:focus{
+    outline: none;
+  }
+   
+}
+
+@media screen and (max-width: 500px) {
+  .image-principale p {
+    font-size: 1.8em;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 33px;
+    padding: 80px 10px 4px 10px;
+  }
+
+  .image-principale {
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(
+        to right,
+        rgba(200, 8, 20, 0.3),
+        rgba(28, 70, 184, 0.2)
+      ),
+      url(images/img-principale.jpg);
+    background-size: cover;
+  }
+
+
+  .ligne-1{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-top: 20px;
+  }
+
+  .boutons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  
+  .boutons button{
+    margin-right: 15px;
+    background-color: transparent;
+    color: #c58c18;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: 0.4s ease-in-out;
+    font-size: 0.7em;
+  }
+  
+  .boutons button:hover{
+    transform: translateY(2px);
+    background-color: #c58c18;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  
+  .titre-1{
+    padding: 40px 0 1px 0;
+    font-family: 'Poppins',sans-serif;
+    color: var(--logo-color);
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container .programmes p{
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+    font-size: 0.7em;
+    margin-bottom: 50px;
+  }
+
+  .card-grid{
+    padding: 10px 0 100px 0;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-title h3{
+    color: var(--logo-color);
+    font-size: 1.4em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 18px;
+  }
+
+  .card-paragraph p{
+    font-size: 0.8em;
+  }
+
+  .titre-1{
+    font-size: 1.5em;
+  }
+
+  .line-2{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-bottom: 20px;
+  }
+
+  .card-icon img {
+    padding: 40px 0;
+    width: 30%;
+  }
+
+  .button-more button{
+    width: 24%;
+    height: 28px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin: 20px 0 40px 0;
+    background-color: var(--logo-color);
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+   
+  .container-donation{
+    width: 100%;
+    height: 170px;
+    margin-bottom: 5%;
+    background-image: url(images/investment.jpg);
+    background-attachment: fixed;
+  }
+
+  .paragraph-donation{
+    float: left;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 0.7em;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: left;
+  }
+
+  .btn-don button{
+    float: left;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--logo-color);
+    color: #fff;
+    font-family:sans-serif;
+    font-size: 0.9em;
+  }
+
+  .btn-don button:hover{
+    cursor: pointer;
+  }
+
+
+  /* ------ a propos  */
+
+  .a-propos{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .container-about{
+    display: block;
+  }
+  
+  .image-about img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .apropos{
+    width: 100%;
+    color: #1b1b1b;
+    font-size: 0.8em;
+    font-family: serif;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .btn-apropos{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: var(--line-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+  }
+
+  /* ---- newsletter  */
+
+  .container-news{
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url(images/background-newsletter.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .newsletter{
+    display: block;
+    margin: 0 auto;
+    background-color: #ededed85;
+    padding-left: 0;
+  }
+
+  .news-side1{
+    margin-right: 0;
+  }
+
+  .news-side1 h2{
+    color: var(--logo-color);
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .news-side1 p{
+    color: #282828;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .news-side1 button{
+    background-color: var(--logo-color);
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 0.6em;
+  }
+  
+  .news-side1 button:hover{
+    cursor: pointer;
+  }
+  
+  .news-side2 img{
+    display: none;
+  }
+
+  .input{
+    text-align: center;
+  }
+  
+  .input-mail{
+    font-style: italic;
+    margin: 15px 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+  }
+  
+  .input-mail:focus{
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  
+  .image-principale p {
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 35px;
+    padding: 85px 10px 10px 10px;
+  }
+
+  .image-principale {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(200, 8, 20, 0.3),
+        rgba(28, 70, 184, 0.2)
+      ),
+      url(images/img-principale.jpg);
+    background-size: cover;
+  }
+ 
+  .ligne-1{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+  }
+  
+  .boutons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  
+  .boutons button{
+    margin-right: 10px;
+    background-color: transparent;
+    color: #c58c18;
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: 0.4s ease-in-out;
+    font-size: 0.7em;
+  }
+  
+  .boutons button:hover{
+    transform: translateY(2px);
+    background-color: #c58c18;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .titre-1{
+    padding: 50px 0 1px 0;
+    font-family: 'Poppins',sans-serif;
+    color: var(--logo-color);
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .container .programmes p{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8em;
+    margin-bottom: 25px;
+  }
+  
+  .line-2{
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-bottom: 20px;
+  }
+
+  .card-grid{
+    padding: 30px 0;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 100px;
+  }
+
+  .card{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 0;
+  }
+
+  .card-icon img {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  .card-title h3{
+    color: var(--logo-color);
+    font-size: 1.1em;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    padding: 7px;
+    line-height: 18px;
+  }
+
+  .card-paragraph p{
+    font-size: 0.9em;
+  }
+
+  .titre-1{
+    font-size: 1.3em;
+  }
+
+  .line-2{
+    margin-top: 10px;
+    width: 20%;
+  }
+
+  .card-icon img {
+    padding: 10px 0 8px 0;
+    width: 30%;
+  }
+
+  .button-more button{
+    width: 60px;
+    height: 25px;
+    font-size: 0.7em;
+    border-radius: 15px;
+    margin: 20px 0 10px 0;
+    background-color: var(--logo-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+  }
+
+  
+  .container-donation{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 5%;
+    background-image: url(images/investment.jpg);
+    background-attachment: fixed;
+  }
+
+  .paragraph-donation{
+    float: left;
+    width: 80%;
+    margin: 12px;
+    font-size: 0.7em;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .btn-don button{
+    float: left;
+    margin: 10px 0;
+    width: 90px;
+    height: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--logo-color);
+    color: #fff;
+    font-family:sans-serif;
+    font-size: 0.9em;
+    padding: 5px;
+  }
+
+  .btn-don button:hover{
+    cursor: pointer;
+  }
+
+  /* -----   a propos  */
+
+  .a-propos{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .container-about{
+    display: block;
+  }
+  
+  .image-about img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 40px;
+  }
+  
+  .apropos{
+    width: 100%;
+    color: #1b1b1b;
+    font-size: 70%;
+    font-family: serif;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .btn-apropos{
+    margin-top: 20px;
+    width: 110px;
+    height: 30px;
+    background-color: var(--line-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+
+  /* ---- newsletter  */
+
+  .container-news{
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url(images/background-newsletter.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .newsletter{
+    display: block;
+    margin: 0 auto;
+    background-color: #ededed85;
+    padding-left: 0;
+  }
+
+  .news-side1{
+    margin-right: 0;
+  }
+
+  .news-side1 h2{
+    color: var(--logo-color);
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .news-side1 p{
+    color: #282828;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .news-side1 button{
+    background-color: var(--logo-color);
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 0.6em;
+  }
+  
+  .news-side1 button:hover{
+    cursor: pointer;
+  }
+  
+  .news-side2 img{
+    display: none;
+  }
+
+  .input{
+    text-align: center;
+  }
+  
+  .input-mail{
+    font-style: italic;
+    margin: 15px 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+  }
+  
+  .input-mail:focus{
+    outline: none;
+  }
+ 
+}
+
+@media screen and (max-width: 320px) {
+  .image-principale p {
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 25px;
+    padding: 40px 10px 15px 10px;
+  }
+
+  .image-principale {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(
+        to right,
+        rgba(200, 8, 20, 0.3),
+        rgba(28, 70, 184, 0.2)
+      ),
+      url(images/img-principale.jpg);
+    background-size: cover;
+  }
+
+  .boutons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .boutons button{
+    margin-right: 10px;
+    background-color: transparent;
+    color: #c58c18;
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: 0.4s ease-in-out;
+    font-size: 0.7em;
+  }
+  
+  .boutons button:hover{
+    transform: translateY(2px);
+    background-color: #c58c18;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+  .titre-1{
+    padding: 50px 0 1px 0;
+    font-family: 'Poppins',sans-serif;
+    color: var(--logo-color);
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .container .programmes p{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 0.7em;
+    margin-bottom: 25px;
+  }
+  
+  .line-2{
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--line-color);
+    margin-bottom: 20px;
+  }
+
+
+  .card-grid{
+    padding: 0 0 100px 0;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-title h3{
+    color: var(--logo-color);
+    font-size: 0.8em;
+    line-height: 18px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-bottom: 8%;
+  }
+
+  .card-paragraph p{
+    font-size: 0.7em;
+  }
+
+  .titre-1{
+    font-size: 1em;
+  }
+
+  .line-2{
+    margin-top: 10px;
+    width: 20%;
+  }
+
+  .card-icon img {
+    padding: 20px 0 8px 0;
+    width: 30%;
+  }
+
+  .button-more button{
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-color: var(--logo-color);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+  }
+
+
+  /* ------    Donation --------- */
+
+  .container-donation{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 40px;
+    background-image: url(images/investment.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .paragraph-donation{
+    float: left;
+    width: 75%;
+    font-size: 0.7em;
+    font-style: italic;
+    font-family: serif;
+    text-align: left;
+    color: #fff;
+    padding: 25px;
+  }
+  
+  .btn-don button{
+    float: left;
+    margin-top: 12px;
+    padding: 5px;
+    justify-content: center;
+    width: 85px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--logo-color);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 0.8em;
+  }
+  
+  .btn-don button:hover{
+    cursor: pointer;
+  }
+  
+  /* ------    A propos de nous */
+
+  
+.a-propos{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.container-about{
+  display: block;
+}
+
+.image-about img{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  margin-top: 30px;
+}
+
+.apropos{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: #1b1b1b;
+  font-size: 0.5em;
+  font-family: serif;
+  margin-top: 10px;
+}
+
+.btn-apropos{
+  text-align: center;
+  margin-top: 20px;
+  width: 80px;
+  height: 20px;
+  background-color: var(--line-color);
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* ---- .newsletter */
+
+.container-news{
+  width: 100%;
+  margin-bottom: 100px;
+  background-image: url(images/background-newsletter.jpg);
+  background-size: cover;
+  text-align: center;
+}
+.newsletter{
+  display: block;
+  margin: 0 auto;
+  background-color: #ededed85;
+  padding-left: 0;
+}
+
+.news-side1{
+  margin-right: 0;
+}
+
+.news-side1 h2{
+  color: var(--logo-color);
+  font-size: 1em;
+  font-family: 'Poppins',sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.news-side1 p{
+  color: #282828;
+  margin: 30px;
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  
+}
+
+.news-side1 button{
+  background-color: var(--logo-color);
+  width: 70px;
+  height: 30px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 0.6em;
+}
+
+.news-side1 button:hover{
+  cursor: pointer;
+}
+
+.news-side2 img{
+  display: none;
+}
+
+.input{
+  text-align: center;
+}
+
+.input-mail{
+  font-style: italic;
+  margin: 15px 0;
+  width: 250px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  
+}
+
+.input-mail:focus{
+  outline: none;
+}
+
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/79fea2c827.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="programme.css">
+    <title>Programme</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>  
+        $(function(){ 
+          $("#header").load("header.html");  
+          $("#footer").load("footer.html");  
+        }); 
+        </script> 
+</head>
+<body>
+    
+    <!-- -------------------------------------------------------------------
+------------------------        Header
+------------------------------------------------------------------- -->
+
+<div id="header"></div>
+
+<!-- -------------------------------------------------------------------
+------------------------    Carousel ------------------------------ -->
+<div class="container">
+
+    <div class="slide-container active">
+        <div class="slide">
+            <div class="content">
+                <h3>Protection de <br>l'environnement</h3>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, porro sit! Mollitia recusandae consequatur officiis?</p>
+            </div>
+            <!-- <div class="image">
+                <img src="images/protection1.jpg" alt="image1" style="width: 70%; border-radius: 10px; transform: rotate(-3deg);">
+            </div> -->
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3>Aide Social</h3>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, porro sit! Mollitia recusandae consequatur officiis?</p>
+            </div>
+            <!-- <div class="image">
+                <img src="images/aidesocial.jpg" alt="image1" style="width: 70%; border-radius: 10px; transform: rotate(-3deg);">
+            </div> -->
+        </div>
+    </div>
+    
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3 id="accompagnement">Accompagnement</h3>
+                <div class="line" id="line"></div>
+                <p id="p-accompagnement">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, porro sit! Mollitia recusandae consequatur officiis?</p>
+            </div>
+            <!-- <div class="image">
+                <img src="images/accompagnement.jpg" alt="image1" style="width: 70%; border-radius: 10px; transform: rotate(-3deg);">
+            </div> -->
+        </div>
+    </div>
+    <div id="prev" onclick="prev()"> < </div>
+    <div id="next" onclick="next()"> > </div>
+    <!-- <i class="fa-thin fa-arrow-right"></i> -->
+</div>
+
+ 
+<script>
+    let slides = document.querySelectorAll('.slide-container');
+    let index = 0;
+
+    function next(){
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }
+
+    function prev(){
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+    }
+
+    setInterval(next, 7000);
+</script>
+
+
+<section class="program-container">
+
+
+    <div class="title">
+        <h3>Protection de l'environnement</h3>
+        <div class="underline"></div>
+    </div>
+    <div class="program">
+ 
+        <div class="paragraph" id="protection">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati atque, 
+                dolore ipsam, eaque harum ullam labore necessitatibus odio corrupti distinctio 
+                numquam earum. Voluptates autem ipsa deleniti architecto quos eos nihil qui quia 
+                ex commodi fugit rem possimus consectetur laboriosam quasi culpa temporibus nobis,
+                error nisi totam suscipit natus quam.<br>
+
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati atque, 
+                dolore ipsam, eaque harum ullam labore necessitatibus odio corrupti distinctio 
+                numquam earum. Voluptates autem ipsa deleniti architecto quos eos nihil qui quia 
+                ex commodi fugit rem possimus consectetur laboriosam quasi culpa temporibus nobis,
+                error nisi totam suscipit natus quam.<br>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="title">
+        <h3>Aide Social</h3>
+        <div class="underline2"></div>
+    </div>
+    <div class="program">
+ 
+        <div class="paragraph" id="aide-social">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati atque, 
+                dolore ipsam, eaque harum ullam labore necessitatibus odio corrupti distinctio 
+                numquam earum. Voluptates autem ipsa deleniti architecto quos eos nihil qui quia 
+                ex commodi fugit rem possimus consectetur laboriosam quasi culpa temporibus nobis,
+                error nisi totam suscipit natus quam.<br>
+
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati atque, 
+                dolore ipsam, eaque harum ullam labore necessitatibus odio corrupti distinctio 
+                numquam earum. Voluptates autem ipsa deleniti architecto quos eos nihil qui quia 
+                ex commodi fugit rem possimus consectetur laboriosam quasi culpa temporibus nobis,
+                error nisi totam suscipit natus quam.<br>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="title">
+        <h3>Accompagnement</h3>
+        <div class="underline2"></div>
+    </div>
+    <div class="program">
+ 
+        <div class="paragraph" id="accompagnement">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati atque, 
+                dolore ipsam, eaque harum ullam labore necessitatibus odio corrupti distinctio 
+                numquam earum. Voluptates autem ipsa deleniti architecto quos eos nihil qui quia 
+                ex commodi fugit rem possimus consectetur laboriosam quasi culpa temporibus nobis,
+                error nisi totam suscipit natus quam.<br>
+
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati atque, 
+                dolore ipsam, eaque harum ullam labore necessitatibus odio corrupti distinctio 
+                numquam earum. Voluptates autem ipsa deleniti architecto quos eos nihil qui quia 
+                ex commodi fugit rem possimus consectetur laboriosam quasi culpa temporibus nobis,
+                error nisi totam suscipit natus quam.<br>
+            </p>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!-- -------------------------------------------------------------------
+---         footer
+------------------------------------------------------------------- -->
+
+<div id="footer"></div>
+</body>
+</html>

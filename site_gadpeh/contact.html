@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <script src="https://kit.fontawesome.com/79fea2c827.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="contact.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>  
+        $(function(){ 
+          $("#header").load("header.html");  
+          $("#footer").load("footer.html");  
+        }); 
+    </script> 
+</head>
+<body>
+
+<!-- -------------------------------------------------------------------
+------------------------        Header     ----------------------------
+---------------------------------------------------------------------->
+
+<div id="header"></div>
+
+
+<!-- -------------------------------------------------------------------
+------------------------        Banner     ----------------------------
+---------------------------------------------------------------------->
+
+<div class="banner-container">
+    <!-- Photo by <a href="https://unsplash.com/@firmbee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Firmbee.com</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+  
+    <div class="title">
+        <h3>Information de Contact</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nisi? Lorem ipsum dolor sit.<br>
+            Lorem ipsum dolor sit amet.</p>
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+    </div>
+</div>
+
+
+<!-- -------------------------------------------------------------------
+------------------------        Information     ------------------------
+---------------------------------------------------------------------->
+
+<div class="info-container">
+    <div class="contact">
+        <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <span>(+509) 5555-5555</span>
+        </div>
+        <div class="phone">
+            <i class="fa-regular fa-envelope"></i>
+            <span>gadpehaiti@gadpeh.org</span>
+        </div>
+    </div>
+
+    <div class="message">
+        <div class="message-title">
+            <h3>Envoye un Message</h3>
+            <p>Remplissez le formulaire et notre équipe vous répondra dans les 24 heures.</p>
+        </div>
+
+        <div class="formulaire">
+            <input type="text" placeholder=" Votre nom">
+            <input type="email" placeholder=" Adresse electronique">
+            <input type="text" placeholder=" Telephone">
+            <input type="text" placeholder=" Sujet">
+
+            <textarea rows="4" cols="48" placeholder="Message"></textarea>
+            <div class="bouton">
+                 <button type="button">Envoye</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+
+</body>
+</html>

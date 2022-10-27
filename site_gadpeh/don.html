@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel="stylesheet" href="don.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>  
+        $(function(){ 
+          $("#header").load("header.html");  
+        }); 
+        </script> 
+</head>
+<body>
+    <div id="header"></div>
+    
+    <div class="container">
+
+            <div class="title">
+                <h5>Donation</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sint?</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="formular">
+                    <img src="images/mon-cash.png" alt="logo mon-cash"><br>
+                    <label for="nom">Nom Complet</label>
+                    <input type="text" name="nom" placeholder="Nom et Prenom">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" name="adresse" placeholder="Adresse">
+                    <label for="city">Ville</label>
+                    <input type="text" name="city" placeholder="Ville">
+                    <label for="code">Zip Code</label>
+                    <input type="text" name="code" placeholder="Zip code">
+                    <label for="country">Pays</label>
+                    <input type="text" name="country" placeholder="Pays">
+                    <label for="cardname">Montant</label>
+                    <input type="text" name="cardname" placeholder="250">
+                    <button type="button">Envoyer</button>
+            </div>
+
+    </div>
+</body>
+</html>
